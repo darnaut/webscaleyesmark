@@ -2,7 +2,7 @@
 
 WebScaleYesMark™ only requires one thing, `yes`. It works like this:
 
-    yes -- "--" | mysql -c >/dev/null &
+    yes "#" | mysql -c &
 
 # Frequently Asked Questions
 
@@ -10,7 +10,7 @@ WebScaleYesMark™ only requires one thing, `yes`. It works like this:
 
 You can achieve a faster spawning of WebScaleYesMark™ test threads with a simple shell for loop:
 
-    for i in {1..16}; do yes -- "--" | mysql -c > /dev/null & done
+    for i in {1..16}; do yes "#" | mysql -c & done
 
 ## How can I tell what my performance is?
 
