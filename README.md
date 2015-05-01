@@ -1,4 +1,4 @@
-# This is WebScaleYesMark™, the world's most advanced Open Source benchmarking platform.
+# This is WebScaleYesMark™, a version of [YesMark™](http://github.com/jeremycole/yesmark) that is designed for web scale.
 
 WebScaleYesMark™ only requires one thing, `yes`. It works like this:
 
@@ -6,11 +6,11 @@ WebScaleYesMark™ only requires one thing, `yes`. It works like this:
 
 # Frequently Asked Questions
 
-## How can I quickly run 16 threads of YesMark™?
+## How can I quickly run 24 threads of YesMark™?
 
 You can achieve a faster spawning of WebScaleYesMark™ test threads with a simple shell for loop:
 
-    for i in {1..16}; do yes "#" | mysql -c & done
+    for i in {1..24}; do yes "#" | mysql -c & done
 
 ## How can I tell what my performance is?
 
